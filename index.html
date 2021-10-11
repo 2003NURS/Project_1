@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Это дает браузеру инструкции по управлению размерами и масштабированием страницы.
+width=device-widthЧасть задает ширину страницы , чтобы следить за экраном на ширину устройства
+ (который будет варьироваться в зависимости от устройства). -->
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" /><!--соединение с CSS-->
+    <title>Frontend Developer</title><!--название сайта!-->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Frontend Developer</a>
+
+        <button
+          class="navbar-toggler"
+          type="button" 
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+        <!-- .collapse скрывает содержимое
+.collapse.show показывает содержание
+.collapsing добавляется, когда переход начинается, и удаляется, когда он заканчивается -->
+          <span class="navbar-toggler-icon"></span>
+          <!-- .navbar-toggler для использования с нашим плагином сворачивания и другими режимами переключения навигации . -->
+        </button>  
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link" style="color: rgb(255, 0, 21);">Instructors</a>
+            </li>
+            <li class="nav-item">
+              <a href="#learn" class="nav-link" style="color:rgb(217, 255, 0)">What You'll Learn</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link" style="color: green">Questions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">  <!--выравниванием и размером столбцов сетки, навигацией, компонентами и т. Д. -->
+          <div>
+            <h1>Become a <span class="text-danger"> Web Developer </span></h1>
+            <p class="lead my-4 text-warning">
+              We focus on teaching our students the fundamentals of the latest
+              and greatest technologies to prepare them for their first dev role
+            </p>
+            <button
+              class="btn btn-primary btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Start registration
+            </button>
+            <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="img/showcase.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="p-3 mb-2 bg-primary text-white">
+      <!-- https://getbootstrap.com/docs/4.0/utilities/colors/ -->
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0">Sign Up For Our website</h3>
+          <!-- регистрация -->
+
+          <div class="input-group news-input">
+            <!-- https://getbootstrap.com/docs/4.0/components/input-group/ -->
+            <input type="text" class="form-control" placeholder="Enter Email" />
+            <button class="btn btn-dark btn-lg" type="button">Submit</button>
+            <!-- простой кнопка -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Boxes sections-->
+    <section class="p-5"> <!--Интервал      https://getbootstrap.com/docs/4.0/utilities/spacing/-->
+      <div class="container">
+        <div class="row text-center g-4">  <!--interval-->
+          <div class="col-md"><!--последний урок-->
+            <div class="card bg-dark text-light"> <!-- https://getbootstrap.com/docs/4.0/utilities/colors/ -->
+              <div class="card-body text-center">  <!--https://www.codegrepper.com/code-examples/html/bootstrap+row+align+center-->
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>   <!-- ноутбук   https://icons.getbootstrap.com/icons/laptop/-->
+                </div>
+                <h3 class="card-title mb-3">Online</h3>
+                <p class="card-text">Online Education with Zoom or Webex
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md"><!--последний урок-->
+            <div class="card bg-warning text-light"> <!--цвет текста   https://getbootstrap.com/docs/4.0/utilities/colors/-->
+              <div class="card-body text-center"><!--выравнивание-->
+                <div class="h1 mb-3"><!--размер шрифта  Typography-->
+                  <i class="bi bi-person-square"></i> <!--человек   https://icons.getbootstrap.com/icons/person-square/-->
+                </div>
+                <h3 class="card-title mb-3">Mixed</h3>  <!--столбцы или система сеток-->
+                <p class="card-text">3 day Offline 2 day Online
+                </p>
+                <a href="#" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-danger text-light"><!--цвет текста и задного фона-->
+              <div class="card-body text-center"> <!--выравнивание-->
+                <div class="h1 mb-3"><!--Font size-->
+                  <i class="bi bi-people"></i><!-- люди -->
+                </div>
+                <h3 class="card-title mb-3">Personally</h3>
+                <p class="card-text">100% Offline learning if only you are vaccinated
+                </p>
+                <a href="#" class="btn btn-secondary">Read More</a><!-- серый цвет-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn Sections учебный-->
+    <section id="learn" class="p-5"><!--interval-->
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="img/11.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>Learn The Fundamentals</h2>
+            <p class="lead">
+              You must have the mindset that every developer must have. This mindset will help you make better programming decisions. 
+            </p>
+            <p style="font-family: 'Times New Roman', Times, serif ; color: red;">First of all, you must understand the purpose of the software. In fact, there is one purpose of all software: helping people.
+Remember, the purpose of software is not to show you how smart you are.
+Developers who cannot understand the purpose of software will write bad software. What is bad software? A complex system that does not help people very much.
+When making software decisions, you should be guided by yourself, always keeping this in mind: how can I help? 
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+
+  </body>
+</html>
+</body>
+</html>
