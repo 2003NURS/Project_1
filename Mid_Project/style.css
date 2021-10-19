@@ -1,0 +1,90 @@
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+.contact{
+	padding-left: 28rem;
+}
+.nav-link a:hover{
+ background: red;
+}
+.page1{
+  background-color: aquamarine;
+  text-shadow: rgb(173, 230, 190);
+}
+.page2{
+  color: blue;
+  text-align: left;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+}
+#navmenu a:hover{
+  color: blue;
+}
+.navbar-brand{
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+.teacher{
+  color: red;
+  margin: 0px 10px 0px 10px;
+}
+.learn{
+  color: blue;
+  margin: 0px 10px 0px 10px;
+}
+.question{
+  color: black;
+  margin: 0px 10px 0px 10px;
+}
+.cont7{
+  padding-top: 80px;
+  max-width: 1200px;
+  letter-spacing: 0;
+  margin: auto;
+}
+.p{
+  color: brown;
+  text-align: center;
+  font-size: 70px;
+  letter-spacing: 3px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px 0px;;
+  
+}
+
+.books{
+  max-width: 360px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+.books img{
+  vertical-align:middle;
+  border-radius: 100px 0px;
+  border: solid black 3px;
+}
+.rww{
+  margin: 0 auto;
+}
+.rww{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#title_2{
+  color: chartreuse;
+}
+#title_2 h3:hover{
+color: red;
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Это дает браузеру инструкции по управлению размерами и масштабированием страницы.
+width=device-widthЧасть задает ширину страницы , чтобы следить за экраном на ширину устройства
+ (который будет варьироваться в зависимости от устройства). -->
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" /><!--соединение с CSS-->
+    <title>Подготовка на ЕНТ</title><!--название сайта!-->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+      <div class="container">
+        <a href="http://127.0.0.1:5500/index.html" class="navbar-brand">Подготовка на ЕНТ</a>
+
+        <button
+          class="navbar-toggler"
+          type="button" 
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+        <!-- .collapse скрывает содержимое
+.collapse.show показывает содержание
+.collapsing добавляется, когда переход начинается, и удаляется, когда он заканчивается -->
+          <span class="navbar-toggler-icon"></span>
+          <!-- .navbar-toggler для использования с нашим плагином сворачивания и другими режимами переключения навигации . -->
+        </button> 
+         
+        <!-- <div class="dropdown" style="background-color: rgb(255, 255, 255); left: 600px;">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Duman Telman
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div> -->
+
+        
+
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="http://127.0.0.1:5500/teachers.html" class="teacher" class="nav-link" >Учителья</a>
+            </li>
+            <li class="nav-item">
+              <a href="http://127.0.0.1:5500/learn.html" class="learn" class="nav-link" >Профессии которое мы обучаем! </a>
+            </li>
+            <li class="nav-item">
+              <a href="http://127.0.0.1:5500/Questions.html" class="question" class="nav-link" >Вопросы?</a>
+            </li>
+          </ul>
+        </div>
+
+        
+        <div class="img1">
+          <img src="https://static.wixstatic.com/media/e6e2ee_e9b77ffb99334dbd8e66771b206b949f~mv2.png/v1/fill/w_32,h_32,al_c,q_85,usm_0.66_1.00_0.01/e6e2ee_e9b77ffb99334dbd8e66771b206b949f~mv2.webp" alt="logo" width="30">
+          <img href="https://www.instagram.com/?hl=ru" src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_32,h_32,al_c,q_85,usm_0.66_1.00_0.01/instagram.webp" alt="insta" width="30">
+          <img src="https://static.wixstatic.com/media/c75715fd5e2f4f788c067a22b53f2277.png/v1/fill/w_32,h_32,al_c,q_85,usm_0.66_1.00_0.01/vkontakte.webp" alt="vk"  width="30">
+      </div> 
+        
+
+
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section
+      class="page1"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">  <!--выравниванием и размером столбцов сетки, навигацией, компонентами и т. Д. -->
+          <div>
+            <h1>Подготовка <span class="text-danger"> на ЕНТ </span></h1>
+            <p class="page2">
+              Мы сосредоточены на обучении наших учеников на ЕНТ для подготовки мы разработали несколько типы обучения:<br>
+1)Провидит конференций с лучшими учениками которые взяли высокие баллы для того чтобы они замотивировали их!<br>
+2)Решение всех задач от 5 класса до 11 того класса!<br>
+3)Запомнить все тестовые ответы до этого года!
+            </p>
+            <button
+              class="btn btn-white btn-sm"
+              data-bs-toggle="modal"
+            
+            >
+              <h4><a href="http://127.0.0.1:5500/log_in.html">Start registration</a></h4>
+            </button>
+            <!-- https://getbootstrap.com/docs/4.0/components/buttons/ -->
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="img/12.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="p-3 mb-2 bg-primary text-white">
+      <!-- https://getbootstrap.com/docs/4.0/utilities/colors/ -->
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0">Отправте номер и мы вам позваним!</h3>
+          <!-- регистрация -->
+
+          <div class="input-group news-input">
+            <!-- https://getbootstrap.com/docs/4.0/components/input-group/ -->
+            <input type="text" class="form-control" placeholder="номер:" />
+            <button class="btn btn-dark btn-lg" type="button">Отправить</button>
+            <!-- простой кнопка -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="p">
+      <p>Каталог наших книг</p>
+  </div>
+
+ 
+  <div class="cont7">
+      <div class="rww">    
+          <div class="books">
+              <img width="360px" height="280px"  class="picture" src="img/18.jpg" alt="">
+              <div class="facts">
+                  <h4>Биология</h4>
+              </div>
+          </div>
+          
+
+          <div class="books">
+              <img width="360px" height="280px"  class="picture" src="img/15.jpg" alt="">
+              <div class="facts">
+                  <h4>Химия</h4>
+              </div>
+          </div>
+
+
+<div class="books">
+              <img width="360px" height="280px"  class="picture" src="img/16.png" alt="">
+              <div class="facts">
+                  <h4>Физика</h4>
+              </div>
+          </div>
+          <div class="books">
+              <img width="360px" height="280px"  class="picture" src="img/17.png" alt="">
+              <div class="facts">
+                  <h4>Қазақ тілі</h4>
+              </div>
+          </div>
+          
+         
+          <div class="books">
+              <img width="360px" height="280px"  class="picture" src="img/19.png" alt="">
+              <div class="facts">
+                  <h4>Ағылшын тілі</h4>
+              </div>
+          </div>
+          <div class="books">
+              <img width="360px" height="280px"  class="picture" src="img/20.jpg" alt="">
+              <div class="facts">
+                  <h4>Математика </h4>
+              </div>
+          </div>
+<div class="books">
+              <img width="360px" height="280px"  class="picture" src="img/21.jpg" alt="">
+              <div class="facts">
+                  <h4>Қазақ Әдебиеті</h4>
+              </div>
+          </div>
+          
+          <div class="books">
+              <img width="360px" height="280px"  class="picture" src="img/22.jpg" alt="">
+              <div class="facts">
+                  <h4>Қ Тарихы</h4>
+              </div>
+          </div>
+          <div class="books">
+              <img width="360px" height="280px"  class="picture" src="img/23.jpg" alt="">
+              <div class="facts">
+                  <h4>География</h4>
+              </div>
+          </div>
+
+          <div class="books">
+              <img width="360px" height="280px"  class="picture" src="img/24.jpg" alt="">
+              <div class="facts">
+                  <h4>Адам Қоғам Құқық</h4>
+              </div>
+          </div>
+
+<div class="books">
+              <img width="360px" height="280px"  class="picture" src="img/25.png" alt="">
+              <div class="facts">
+                  <h4>Дүние жүзі тарихы</h4>
+              </div>
+          </div>
+          <div class="books">
+              <img width="360px" height="280px"  class="picture" src="img/26.jpg" alt="">
+              <div class="facts">
+                  <h4>Орыс тілі</h4>
+              </div>
+          </div>
+          <div class="books">
+              <img width="360px" height="280px"  class="picture" src="img/27.jpg" alt="">
+              <div class="facts">
+                  <h4>Мат сауат</h4>
+              </div>
+          </div>
+      </div>
+  </div>    
+
+    <!-- Boxes sections-->
+    <section class="p-5"> <!--Интервал      https://getbootstrap.com/docs/4.0/utilities/spacing/-->
+      <div class="container">
+        <div class="row text-center g-4">  <!--interval-->
+          <div class="col-md"><!--последний урок-->
+            <div class="card bg-dark text-light"> <!-- https://getbootstrap.com/docs/4.0/utilities/colors/ -->
+              <div class="card-body text-center">  <!--https://www.codegrepper.com/code-examples/html/bootstrap+row+align+center-->
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>   <!-- ноутбук   https://icons.getbootstrap.com/icons/laptop/-->
+                </div>
+                <h3 class="card-title mb-3">Online</h3>
+                <p class="card-text">Онлайн-образование с помощью<br> Zoom или Webex
+                </p>
+                <a href="#" class="btn btn-primary">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md"><!--последний урок-->
+            <div class="card bg-warning text-light"> <!--цвет текста   https://getbootstrap.com/docs/4.0/utilities/colors/-->
+              <div class="card-body text-center"><!--выравнивание-->
+                <div class="h1 mb-3"><!--размер шрифта  Typography-->
+                  <i class="bi bi-person-square"></i> <!--человек   https://icons.getbootstrap.com/icons/person-square/-->
+                </div>
+                <h3 class="card-title mb-3">Смешанные</h3>  <!--столбцы или система сеток-->
+                <p class="card-text">-3 дня офлайн<br> -2 дня онлайн
+                </p>
+                <a href="#" class="btn btn-dark">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-danger text-light"><!--цвет текста и задного фона-->
+              <div class="card-body text-center"> <!--выравнивание-->
+                <div class="h1 mb-3"><!--Font size-->
+                  <i class="bi bi-people"></i><!-- люди -->
+                </div>
+                <h3 class="card-title mb-3">Офлайн</h3>
+                <p class="card-text">100% офлайн обучение, если только вы вакцинированный
+                </p>
+                <a href="#" class="btn btn-secondary">Подробнее</a><!-- серый цвет-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn Sections учебный-->
+    <section id="learn" class="p-5"><!--interval-->
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="img/28.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>Изучите основы</h2>
+            <p class="lead">
+              Вы должны обладать мышлением, которое должно быть у каждого человека. Это мышление поможет вам принимать лучшие решения для развитие. Главное у вас должно быть Сила воли для решимости!!! 
+            </p>
+            <p style="font-family: 'Times New Roman', Times, serif ; color: red;">Прежде всего, вы должны понять чего вы хотите и потом должны действовать, ориентируясь на себя, всегда помня: как я могу помочь себе? 
+              Если ты сдашься на пол пути то у тебя нету сила воли для того чтобы дойти до конца пути!
+            </p>
+            <a href="http://testcenter.kz/pedagogam/nkt/nkt-dlya-rukovoditeley-organizatsiy-obrazovaniya/" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i>     
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Question Accordion -->
+    
+
+    
+
+    <!-- Contact & Map -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md contact">
+            <h2 class="text-center mb-4">Контактная информация</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Основное местонахождение:</span> Казахстан, Алматинская область, Карасайский район, Каскелен, проспект Абылай хана, 1/1
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Телефон:</span> 8-(707)-551-17-67
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Email:</span> 200103444@stu.sdu.edu.kz
+                enroll@sdu.kz
+              </li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-4 bg-secondary text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Авторское право &copy; 2021 Amanzhol Nursultan</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <!-- https://getbootstrap.com/docs/5.0/utilities/position/ -->
+          <i class="bi bi-arrow-up-circle h3"></i>
+          <!-- https://icons.getbootstrap.com/icons/arrow-up-circle/ -->
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <!-- <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form and we will get back to you</p>
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                  First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name:</label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    
+
+
+    
+
+    
+
+  </body>
+</html>
+</body>
+</html>
